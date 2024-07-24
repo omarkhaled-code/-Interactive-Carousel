@@ -13,38 +13,36 @@ main {
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
-        .content {
-          .icons {
-            margin-bottom: 10px;
-            .star {
-              color: #f79009;
-              width: 15.76px;
-              height: 15.19px;
-              margin-right: 3px;
-            }
-          }
-          .text {
-            p {
-              font-weight: 400;
-              font-family: 'DM Sans';
-              font-size: 16px;
-              line-height: 24px;
-              color: #101828;
-            }
+        .content .icons {
+          margin-bottom: 10px;
+          .star {
+            color: #f79009;
+            width: 15.76px;
+            height: 15.19px;
+            margin-right: 3px;
           }
         }
-        .user-info {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          .img {
-            img,
-            span {
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              background: #c3c7df;
-            }
+        .text {
+          p {
+            font-weight: 400;
+            font-family: 'DM Sans';
+            font-size: 16px;
+            line-height: 24px;
+            color: #101828;
+          }
+        }
+      }
+      .user-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .img {
+          img,
+          span {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #c3c7df;
           }
           .info {
             h3 {
