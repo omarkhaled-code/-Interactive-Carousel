@@ -3,6 +3,8 @@ main {
     .carousel {
       margin-bottom: 50px;
       .card {
+        min-width: 300px;
+        min-height: 350px;
         width: 300px;
         height: 350px;
         border-radius: 12px;
