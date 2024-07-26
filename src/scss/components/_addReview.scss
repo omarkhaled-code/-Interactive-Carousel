@@ -24,8 +24,10 @@ main .container .new-review {
       height: 183px;
     }
     ::placeholder {
+      font-family: 'Poppins';
       font-weight: 400;
       font-size: 16px;
+      line-height: 24px;
       color: #667085;
     }
     button.submit {

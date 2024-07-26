@@ -46,22 +46,21 @@ main {
             border-radius: 50%;
             background: #c3c7df;
           }
-          .info {
-            h3 {
-              font-weight: 500;
-              font-size: 14px;
-              font-family: 'DM Sans';
-              line-height: 20px;
-              color: #101828;
-              margin-bottom: 2px;
-            }
-            p {
-              font-weight: 400;
-              font-size: 14px;
-              font-family: 'DM Sans';
-              line-height: 20px;
-              color: #667085;
-            }
+        }
+        .info {
+          h3 {
+            font-weight: 500;
+            font-size: 14px;
+            font-family: 'DM Sans';
+            line-height: 20px;
+            color: #101828;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'DM Sans';
+            line-height: 20px;
+            color: #667085;
           }
         }
       }

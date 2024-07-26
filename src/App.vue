@@ -1,7 +1,10 @@
 <script setup>
 // download component files
 import NewReview from '@/components/NewReview.vue'
+import EditReview from '@/components/EditReview.vue'
 import CarouselCards from '@/components/CarouselCards.vue'
+import carouselStore from './stores/cards'
+let cardsStore = carouselStore()
 </script>
 
 <template>
@@ -13,6 +16,7 @@ import CarouselCards from '@/components/CarouselCards.vue'
       <h2>What Our Customer Said</h2>
       <CarouselCards />
       <NewReview />
+      <EditReview v-if="cardsStore.editModeID" />
     </div>
   </main>
 </template>

@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 
 const carouselStore = defineStore('useTaskStore', {
   state: () => ({
+    editModeID: null,
     cards: [
       {
         id: 1,
@@ -58,6 +59,31 @@ const carouselStore = defineStore('useTaskStore', {
   actions: {
     addReview(review) {
       this.cards.push(review)
+    },
+    setEditMode(id) {
+      this.editModeID = id
+    },
+    editReview() {
+      if (this.editModeID) {
+        for (let i = 0; i < this.cards.length; i++) {
+          if (this.cards[i].id === this.editModeID) {
+            return this.cards[i]
+          }
+        }
+      }
+    },
+    updateReview(newReview) {
+      for (let i = 0; i < this.cards.length; i++) {
+        if (this.cards[i].id === newReview.id) {
+          this.cards[i] = newReview
+          break
+        }
+      }
+      this.setEditMode(null)
+      console.log(this.editModeID)
+    },
+    deleteReview(id) {
+      this.cards = this.cards.filter((card) => card.id !== id)
     }
   }
 })

@@ -17,7 +17,7 @@ const handleSubmit = () => {
       userName: customerName.value,
       jobTitle: customerJobTitle.value,
       review: customerReivew.value,
-      numOfStars: 3
+      numOfStars: 5
     }
 
   cardsStore.addReview(newReview)
