@@ -15,22 +15,36 @@ main {
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
-        .content .icons {
-          margin-bottom: 10px;
-          .star {
-            color: #f79009;
-            width: 15.76px;
-            height: 15.19px;
-            margin-right: 3px;
+        .content {
+          .update-icon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: 0.4s;
+            &:hover {
+              opacity: 1;
+            }
           }
-        }
-        .text {
-          p {
-            font-weight: 400;
-            font-family: 'DM Sans';
-            font-size: 16px;
-            line-height: 24px;
-            color: #101828;
+          .icons {
+            margin-bottom: 10px;
+            .star {
+              color: #f79009;
+              width: 15.76px;
+              height: 15.19px;
+              margin-right: 3px;
+            }
+          }
+          .text {
+            p {
+              font-weight: 400;
+              font-family: 'DM Sans';
+              font-size: 16px;
+              line-height: 24px;
+              color: #101828;
+            }
           }
         }
       }
@@ -63,6 +77,52 @@ main {
             color: #667085;
           }
         }
+        .delete-icon {
+          position: absolute;
+          right: 40px;
+          bottom: 40px;
+          cursor: pointer;
+          color: rgb(207, 10, 10);
+          opacity: 0.3;
+          transition: 0.3s;
+          font-size: 20px;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .temp {
+      font-family: "'DM SANS'";
+      font-weight: 700;
+      color: black;
+      font-style: italic;
+    }
+  }
+  // === Style Control AutoPlay Buttons ===
+  .controls-title {
+    margin-bottom: 20px;
+  }
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    button {
+      font-family: 'DM Sans';
+      font-weight: 700;
+      padding: 10px 14px;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 80px;
+      transition: 0.3s;
+      border: 1px solid transparent;
+      &:hover {
+        border-color: black;
+        color: black;
+        background-color: transparent;
       }
     }
   }
