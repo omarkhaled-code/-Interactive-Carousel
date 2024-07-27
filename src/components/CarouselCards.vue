@@ -54,15 +54,26 @@ const onSwiper = (swiperInstance) => {
 
 // === Start Autoplay ===
 const startAutoplay = () => {
-  if (mySwiper.value) {
+  if (
+    mySwiper.value &&
+    mySwiper.value.autoplay &&
+    typeof mySwiper.value.autoplay.start === 'function'
+  ) {
     mySwiper.value.autoplay.start()
+  } else {
+    console.warn('Swiper autoplay start function is not available.')
   }
 }
-
 // === Stop Autoplay ===
 const stopAutoplay = () => {
-  if (mySwiper.value) {
+  if (
+    mySwiper.value &&
+    mySwiper.value.autoplay &&
+    typeof mySwiper.value.autoplay.stop === 'function'
+  ) {
     mySwiper.value.autoplay.stop()
+  } else {
+    console.warn('Swiper autoplay stop function is not available.')
   }
 }
 </script>
@@ -111,9 +122,9 @@ const stopAutoplay = () => {
             <div class="user-info">
               <div class="img">
                 <img
-                  v-if="card.img"
-                  :src="`src/assets/${card.img}`"
-                  :alt="`${card.userName} image`"
+                  v-if="card.image !== null"
+                  :src="card.image"
+                  :alt="`${card.image} image`"
                   class="user-img"
                 />
                 <img src="@/assets/user.png" alt="user image" v-else />
@@ -127,12 +138,6 @@ const stopAutoplay = () => {
                 class="delete-icon"
                 @click="cardsStore.deleteReview(card.id)"
               />
-
-              <!-- Edit Button   --! >
-            <button @click="cardsStore.setEditMode(card.id)">Edit</button> -->
-
-              <!-- Delete Button --! >
-            <button @click="cardsStore.deleteReview(card.id)">Delete</button> -->
             </div>
           </swiper-slide>
           <template v-slot:pagination>

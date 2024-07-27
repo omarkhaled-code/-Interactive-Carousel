@@ -51,13 +51,15 @@
       margin-bottom: 14px;
     }
     input,
-    textarea {
+    textarea,
+    .file-input-button {
       width: 85%;
       margin: 10px auto;
       padding: 6px 10px;
       border: none;
       border-radius: 10px;
       background-color: #eaecf0;
+      outline: none;
     }
     textarea {
       height: 100px;
@@ -69,6 +71,41 @@
       line-height: 24px;
       color: #667085;
     }
+    .input {
+      width: 85%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 20px;
+    }
+    .file-input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 65%;
+    }
+    .file-input {
+      display: none;
+    }
+    .file-input-button {
+      font-family: 'Poppins';
+      color: #667085;
+      width: 98%;
+      border-radius: 4px;
+      transition: 0.3s;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      cursor: pointer;
+      &:active {
+        background-color: #ccc;
+      }
+    }
+    .check-icon {
+      color: green;
+      font-size: 18px;
+    }
+
     button {
       border-radius: 8px;
       padding: 14px 16px 14px 16px;

@@ -10,8 +10,8 @@ const carouselStore = defineStore('useTaskStore', {
         jobTitle: 'ABC Company',
         review:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor vestibulum odio, eget convallis enim euismod ut. Integer sollicitudin at nibh maximus molestie. Donec vitae diam et sem posuere lobortis nec nec lacus. Proin id enim nec erat volutpat mattis vel ut felis.',
-        img: 'customer-1.png',
-        numOfStars: 3
+        numOfStars: 3,
+        image: 'src/assets/customer-1.png'
       },
       {
         id: 2,
@@ -19,8 +19,8 @@ const carouselStore = defineStore('useTaskStore', {
         jobTitle: 'ABC Company',
         review:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor vestibulum odio, eget convallis enim euismod ut. Integer sollicitudin at nibh maximus molestie. Donec vitae diam et sem posuere lobortis nec nec lacus. Proin id enim nec erat volutpat mattis vel ut felis.',
-        img: 'customer-2.png',
-        numOfStars: 5
+        numOfStars: 3,
+        image: 'src/assets/customer-2.png'
       },
       {
         id: 3,
@@ -28,8 +28,8 @@ const carouselStore = defineStore('useTaskStore', {
         jobTitle: 'ABC Company',
         review:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor vestibulum odio, eget convallis enim euismod ut. Integer sollicitudin at nibh maximus molestie. Donec vitae diam et sem posuere lobortis nec nec lacus. Proin id enim nec erat volutpat mattis vel ut felis.',
-        img: 'customer-3.png',
-        numOfStars: 4
+        numOfStars: 3,
+        image: 'src/assets/customer-3.png'
       },
       {
         id: 4,
@@ -37,8 +37,8 @@ const carouselStore = defineStore('useTaskStore', {
         jobTitle: 'ABC Company',
         review:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor vestibulum odio, eget convallis enim euismod ut. Integer sollicitudin at nibh maximus molestie. Donec vitae diam et sem posuere lobortis nec nec lacus. Proin id enim nec erat volutpat mattis vel ut felis.',
-        img: 'customer-2.png',
-        numOfStars: 5
+        numOfStars: 3,
+        image: 'src/assets/customer-1.png'
       },
       {
         id: 5,
@@ -46,8 +46,8 @@ const carouselStore = defineStore('useTaskStore', {
         jobTitle: 'ABC Company',
         review:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor vestibulum odio, eget convallis enim euismod ut. Integer sollicitudin at nibh maximus molestie. Donec vitae diam et sem posuere lobortis nec nec lacus. Proin id enim nec erat volutpat mattis vel ut felis.',
-        img: 'customer-3.png',
-        numOfStars: 4
+        numOfStars: 3,
+        image: 'src/assets/customer-2.png'
       }
     ]
   }),
